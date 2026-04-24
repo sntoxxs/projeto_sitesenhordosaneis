@@ -1,22 +1,69 @@
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-            #titulo_principal{
-                background-color: #8B6F1E;;;
-                color: white;
-            }
+
 
             .titulo_secundario{
-                background-color: #2F4F2F;;;
+                background-color: orange;
                 color: white;
             }
 
-            #layout {
-
-                display: flex;
+            #titulo_principal{
+                background-color: green;
+                color: white;
             }
 
-            .rodape {
-
+            .rodape{
                 text-align: center;
             }
 
-        
+            #body{
+                background-color:  /*Cor de fundo*/
+                color: rgb(255,255,255); /*Cor da fonte*/
+                font-family: "Roboto", sans-serif; /*Fonte do texto*/
+                font-size: 16px;
+
+            }
+
+            #layout{ 
+                font-size: 1em; /*Herda o tamanho do pai dele (body)com o multiplicador*/ 
+                display: flex;
+                flex-direction: column; /*Usado para defomor a direção dos elementos que sao filhos de um display*/
+                font-style: normal; /*Estilo da fonte: ialic - normal - oblique*/
+                line-height: 30px; /*Espaçamento de linhas*/
+                font-weight: 400; /*Negrito em css 100 a 900 bold e bolder*/
+                text-transform: none; /*Capitalização do texto: uppercase - lowercase - captalize*/
+                text-decoration: none; /*Formas de sublinhar texto: underline ou overline double - dashed - dotted - wavy - none*/
+                word-spacing: 5px; /*Espaçamento entre palavras*/
+                letter-spacing: none; /*Espaçamento entre letras*/
+                text-indent: 20px;/*Espaçamento de paragrafo primeira linha*/                                           
+                text-align: justify; /*Alinhamento do texto: left - right - justify e center*/
+                border-style: solid; /*Estilo da borda: solid, dashed, dotted, double, groove, ridge, inset, outset*/
+                border-width: 20px; /*Espessura da borda*/
+                border-color:rgb(243, 163, 63) ; /*Cor da Borda*/
+                border: dashed 5px rgb(243, 163, 63); /*Definir estilo, espessura e cor da borda numa mesma linha*/
+                border-top: dotted 10px rgb(18, 72, 109);
+                border-left: dotted 20px rgb(120, 69, 48) ;
+                border-bottom: solid 15px rgb(252, 229, 173);
+                border-radius: 100px ; /*Arredondar cantos da borda*/
+                margin: 20px 30px 50px 100px; /*Margem do lado de FORA da borda*/
+                margin-left: 20px ; /*Margem esquerda fora da borda*/
+                margin-right: 20px ; /*Margem a direita fora da borda*/
+                margin-bottom: 20px ; /*Margem de baixo fora da borda*/
+                margin-top: 20px ; /*Margem de cima fora da borda*/
+                padding: 20px ; /*margem DENTRO da borda*/
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                 }
+
+             nav a{
+                text-decoration: none;
+            }
+
+            /*.teste_display
+            background-color: aquamarine;
+            display: block;
+            width: 500px;*/
+            
+          
