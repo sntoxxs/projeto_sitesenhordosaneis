@@ -65,5 +65,76 @@
             background-color: aquamarine;
             display: block;
             width: 500px;*/
+
+            .teste_display{
+                background-color: #fff000;
+                display: inline;
+                width: 200px;
+            }
+
+            #teste_estilo_lista_ul{
+                list-style-type: disc; /*disc, circle, none, definir o estilo de marcador da lista*/
+
+            }
+
+             #teste_estilo_lista_ol{
+                list-style-type: decimal; /*decimal, lower roman, upper roman, lower greek, lower alpha, upper alpha*/
+                list-style-image: url(setadireita.png.png);
+                
+            }
+
+            li{
+                border: solid 3px orange
+                ;
+                list-style-position: outside; /*Ele serve para dizer ao navegador se o marcador da lista faz parte ou nao do testo da lista, inside e outside*/
+            
+            }
+
+            #impacto{
+                /*background url no-repeat resume a imagem de fundo e repetição de uma linha*/
+
+                background-image: url(senhosdosaneisfundo.png.jpg);/*Carrerga imagem ao fundo do elemento html*/
+                background-repeat: no-repeat ; /*no repeat, repeat, repeat y, repeat x, configura a forma como a imagem ira repetir ao fundo do elemento html*/
+                background-position: center; /*left, right, top, bottom, center e pede dois ao mesmo tempo*/
+                width: 2000px;
+                height: 1500px;
+                background-size: cover; /*serve para definir como a imagem sera exibiada ao fundo do elemento html, contain, cover, px, auto*/
+                background-attachment: fixed; /*Define como a imagem vai lidar com scrooll ao fundo do elemento html, scroll e fixed*/
+                text-shadow: 3px 3px 2px red; /*Define a sombra do texto*/
+            }
+
+            .noticia{
+                border: solid 3px white;
+                width: 200px;
+                position: fixed; /*Define o posiocionamento atras ou na frente dos elementos html, fixed, relative, absolute e static*/
+                height: 100px;
+                 overflow: visible; /*Configura o comportamento de quando por exemplo um texto passa das bordas de um elemento html(da overlow) visible/hidden/scrooll/auto*/
+                 box-shadow: 3px 3px 3px 3px orange; /*Define a sombra de um elemento html de bloco*/
+            }
+
+            .um{
+                background-color: blue;
+                top: 0px;
+                left: 50px;
+                z-index: 3; /*define a ordem que o elemento vai ficar uns atras dos outros*/
+                
+               
+                
+            }
+
+            .dois{
+                background-color: red;
+                top: 100px;
+                left: 150px;
+
+            }
+
+            .tres{
+                background-color: green;
+                top: 200px;
+                left: 250px;
+                
+            }
+
             
           
