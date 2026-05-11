@@ -59,12 +59,40 @@
 
              nav a{
                 text-decoration: none;
+                color: white;
+            }
+
+            nav a:hover{
+                color: black;
+                opacity: 0.7;
             }
 
             /*.teste_display
             background-color: aquamarine;
             display: block;
             width: 500px;*/
+
+            .transicao{
+                background-color: white;
+                border: solid 3px red;
+                color: black;
+                width: 300px;
+                height: 300px;
+                transition-duration: 3s; /*Define o tempo de transição*/
+                transition-property: width, background-color; /*Define quais propriedades css deverao entrar na transição*/
+                transition-delay: 0.5s;
+                transition-timing-function: ease-in; /*ease-in, ease-out, linear, ease, ease-in-out*/
+            }
+
+            .transicao:hover{
+                background-color: pink;
+                width: 600px;
+                color: blue;
+            }
+            #email:focus{
+                background-color: green;
+                color: white;
+            }
 
             .teste_display{
                 background-color: #fff000;
@@ -110,6 +138,38 @@
                 height: 100px;
                  overflow: visible; /*Configura o comportamento de quando por exemplo um texto passa das bordas de um elemento html(da overlow) visible/hidden/scrooll/auto*/
                  box-shadow: 3px 3px 3px 3px orange; /*Define a sombra de um elemento html de bloco*/
+            }
+
+            h1{
+                animation-name: multicolor ;
+                animation-duration: 10s; 
+                animation-delay: 2s;
+                animation-fill-mode: forwards; /*forwards, backwards*/ 
+                animation-iteration-count: infinite; /*Quantidade de animaçoes, infinitas*/ 
+            }
+
+            @keyframes multicolor{
+                from{color: red;}
+                to{color: blue;}
+                0%{}
+                25%{}
+            }
+
+            
+            .animacao img{
+                display: block;
+                animation: foguete;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+
+            }
+
+            @keyframes foguete{
+                0%{margin-left: 0%;}
+                25%{margin-left: 80%; transform: rotate(0deg)}
+                50%{margin-left: 80%; transform: rotate(-120deg);}
+                75%{margin-left: 0%; transform: rotate(-120deg);}
+                100%{margin-left: 0%; transform: rotate(0deg);}
             }
 
             .um{
